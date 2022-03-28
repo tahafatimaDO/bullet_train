@@ -150,6 +150,18 @@ class MembershipSystemTest < ApplicationSystemTestCase
       click_on "Back"
 
       assert page.has_content?("The Testing Team Team Members")
+
+      # Create a new Application and check if it's registered as a Team member
+      visit new_account_team_platform_application_path(Team.first)
+      fill_in "Name", with: "Test Application"
+      click_on "Provision Platform Application"
+      visit account_team_memberships_path(Team.first)
+      assert page.has_content?("Test Application")
+
+      # Applications should not have a `Remove from Team` button
+      platform_membership = Membership.find_by(platform_agent_of_id: Platform::Application.first.id)
+      visit account_membership_path(platform_membership)
+      refute page.has_content?("Remove from Team")
     end
   end
 end

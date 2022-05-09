@@ -1,0 +1,7 @@
+spec:
+  name: bullet_train
+  services:
+    - name: web
+      git:
+        branch: digital-ocean-deployment
+        repo_clone_url: https://github.com/gazayas/bullet_train.git

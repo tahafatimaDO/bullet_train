@@ -1,5 +1,5 @@
 spec:
-  name: bullet_train
+  name: bullettrain
   services:
     - name: web
       github:

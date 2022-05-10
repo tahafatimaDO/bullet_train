@@ -2,9 +2,8 @@ spec:
   name: bullet-train
   services:
     - name: web
-      github:
-        repo: gazayas/bullet_train
-        branch: digital-ocean-deployment
+      git: https://github.com/bullet-train-co/bullet_train.git
+      branch: deploy-with-digital-ocean
   databases:
     - name: bullet-train-production
       engine: PG

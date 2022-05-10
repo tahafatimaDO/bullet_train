@@ -8,3 +8,4 @@ spec:
   databases:
     - name: bullet-train-production
       engine: PG
+      production: true

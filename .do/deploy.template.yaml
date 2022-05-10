@@ -2,8 +2,9 @@ spec:
   name: bullet-train
   services:
     - name: web
-      git: https://github.com/bullet-train-co/bullet_train.git
-      branch: deploy-with-digital-ocean
+      git:
+        repo_clone_url: https://github.com/bullet-train-co/bullet_train.git
+        branch: deploy-with-digital-ocean
   databases:
     - name: bullet-train-production
       engine: PG

@@ -5,3 +5,7 @@ spec:
       github:
         repo: gazayas/bullet_train
         branch: digital-ocean-deployment
+  databases:
+    - name: bullet-train-production
+      engine: PG
+      production: true

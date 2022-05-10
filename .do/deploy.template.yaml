@@ -1,5 +1,5 @@
 spec:
-  name: bullet-train
+  name: bullettrain
   services:
     - name: web
       github:
@@ -7,7 +7,6 @@ spec:
         branch: digital-ocean-deployment
       envs:
         - key: BASE_URL
-          value: <%= ENV["BASE_URL"] %>
           scope: RUN_AND_BUILD_TIME
           type: SECRET
   databases:

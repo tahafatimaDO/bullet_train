@@ -4,7 +4,10 @@
   "repository": "https://github.com/bullet-train-co/bullet_train",
   "logo": "https://tailwind.bullettrain.co/heroku-logo.png",
   "keywords": ["ruby", "rails"],
-  "buildpacks": [],
+  "buildpacks": [
+    { "url": "heroku/nodejs" },
+    { "url": "heroku/ruby" }
+  ],
   "formation": {
     "web": {
       "quantity": 1,

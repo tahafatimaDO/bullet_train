@@ -5,17 +5,3 @@ spec:
       github:
         repo: gazayas/bullet_train
         branch: digital-ocean-deployment
-      envs:
-        - key: BASE_URL
-          scope: RUN_AND_BUILD_TIME
-          type: SECRET
-  databases:
-    - name: bullet-train-production
-      engine: PG
-      production: true
-      db_name: untitled_application_production
-      db_user: untitled_application
-  databases:
-    - name: bullet-train-redis
-      engine: REDIS
-      production: true

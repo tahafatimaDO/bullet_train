@@ -8,3 +8,6 @@ spec:
   databases:
     - name: bullet-train-production
       engine: PG
+      cluster_name: bullet-train-db-cluster
+      db_user: untitled_application
+      db_name: untitled_application_production

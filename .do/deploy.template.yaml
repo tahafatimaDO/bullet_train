@@ -8,4 +8,6 @@ spec:
   databases:
     - name: bullet-train-production
       engine: PG
-      production: true
+  databases:
+    - name: bullet-train-redis
+      engine: REDIS

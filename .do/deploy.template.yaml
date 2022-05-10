@@ -6,6 +6,6 @@ spec:
         repo: gazayas/bullet_train
         branch: digital-ocean-deployment
   databases:
-    - name: bullet-train-production
+    - name: db
       engine: PG
       production: true
